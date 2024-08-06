@@ -18,6 +18,7 @@ const Navbar = () => {
 				">
 					<Logo/>
 					<Search/>
+					
 				</div>
 			</Container>
 		</div>
