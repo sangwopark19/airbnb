@@ -1,15 +1,16 @@
-'use client'
+"use client";
 
 import { AiOutlineMenu } from "react-icons/ai";
 import Avatar from "../Avatar";
+import { useCallback, useState } from "react";
 
 const UserMenu = () => {
-	return ( 
-		<div className="relative">
-			<div className="flex flex-row items-center gap-3">
-				<div
-				onClick={() => {}}
-				className="
+  return (
+    <div className="relative">
+      <div className="flex flex-row items-center gap-3">
+        <div
+          onClick={() => {}}
+          className="
 					hidden
 					md:block
 					text-sm
@@ -21,12 +22,12 @@ const UserMenu = () => {
 					transition
 					cursor-pointer
 				"
-				>
-					당신의 공간을 에어비앤비하세요
-				</div>
-				<div 
-				onClick={() => {}}
-				className="
+        >
+          당신의 공간을 에어비앤비하세요
+        </div>
+        <div
+          onClick={() => {}}
+          className="
 					p-4
 					md:py-1
 					md:px-2
@@ -41,15 +42,15 @@ const UserMenu = () => {
 					hover:shadow-md
 					transition
 				"
-				>
-					<AiOutlineMenu />
-					<div className="hidden md:block">
-						<Avatar />
-					</div>
-				</div>
-			</div>
-		</div>
-	 );
-}
- 
+        >
+          <AiOutlineMenu />
+          <div className="hidden md:block">
+            <Avatar />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default UserMenu;
